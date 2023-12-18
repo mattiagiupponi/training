@@ -1,0 +1,18 @@
+{% extends "geonode-mapstore-client/snippets/brand_navbar.html" %}
+{% load static %}
+{% load get_menu_json %}
+{% load catalogue_urls %}
+{% get_user_menu as USER_MENU %}
+
+{% block left_menu %}
+<ul class="gn-menu-list">
+    <li>
+        <a href="http://google.com">
+            <img src="{% block logo_src %}/static/mapstore/img/geonode-logo.svg{% endblock %}">
+        </a>
+    </li>
+</ul>
+{% endblock %}
+
+{% block center_menu %}
+{% endblock %}
